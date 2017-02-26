@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_gray_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar_head"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue"
+                android:fitsSystemWindows="true"
+                app:titleTextColor="#ffffff"
+                app:theme="@style/ToolbarColoredBackArrow"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Message"
+                android:layout_marginLeft="48dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:id="@+id/address"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10sp"
+        android:hint="To"
+        android:layout_centerVertical="true"
+        app:hintTextAppearance="@style/TextLabel1"
+        android:textColorHint="#a09f9f"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:inputType="number"
+            android:backgroundTint="@color/blue"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/darker_gray_text"
+            android:layout_marginLeft="5sp"
+            android:id="@+id/to_et" />
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Message here ..."
+        android:gravity="top"
+        android:maxHeight="300sp"
+        android:minHeight="200sp"
+        android:textSize="16sp"
+        android:padding="10sp"
+        android:textColorHint="@color/hint_text_color"
+        android:textColor="@color/darker_gray_text"
+        android:background="@android:color/white"
+        android:layout_margin="10sp"
+        android:id="@+id/enter_msg_et" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button_back"
+        android:text="Send"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:id="@+id/send_but" />
+
+
+
+</LinearLayout>

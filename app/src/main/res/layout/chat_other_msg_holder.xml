@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="7sp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/other_msg_bubble"
+        android:paddingLeft="30dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:id="@+id/text"
+            android:text="Hi, Suraj. I have a Kvest for you to complete !!!."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:textColor="#ffffff"
+            android:id="@+id/time"
+            android:textSize="10sp"
+            android:layout_marginTop="15sp"
+            android:text="9:36 AM"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15sp"
+            android:textSize="10sp"
+            android:id="@+id/date"
+            android:text="10/Oct"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

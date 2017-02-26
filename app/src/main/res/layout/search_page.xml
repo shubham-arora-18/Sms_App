@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar_head"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue"
+                android:fitsSystemWindows="true"
+                app:titleTextColor="#ffffff"
+                app:theme="@style/ToolbarColoredBackArrow"
+                />
+
+
+           <ImageView
+               android:layout_width="25sp"
+               android:layout_height="25sp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="50sp"
+               android:id="@+id/search_icon"
+               android:src="@drawable/search_icon"/>
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:backgroundTint="#ffffff"
+                android:textCursorDrawable="@null"
+                android:hint="Enter Text"
+                android:textColorHint="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/search_icon"
+                android:textColor="#ffffff"
+                android:layout_toLeftOf="@+id/search_button"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:id="@+id/search_et" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="35sp"
+                android:background="@drawable/search_button_back"
+                android:text="Search"
+                android:id="@+id/search_button"
+                android:textColor="@color/blue"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10sp"
+                android:textSize="8sp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_head"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:background="@color/light_gray_background"
+            android:id="@+id/search_recy_view"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

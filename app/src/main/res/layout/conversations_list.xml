@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_background"
+    android:fitsSystemWindows="true"
+    tools:context=".Conversations_list_MAIN">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMS...ing App"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@+id/sms_icon"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/sms_icon"
+                    android:src="@drawable/sms_icon"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:padding="3sp"
+                    android:src="@drawable/new_sms"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/new_sms_icon"
+                    android:layout_marginRight="20sp"/>
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:padding="3sp"
+                    android:src="@drawable/search_icon"
+                    android:layout_toLeftOf="@+id/new_sms_icon"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/search_icon"
+                    android:layout_marginRight="20sp"/>
+            </RelativeLayout>
+            </android.support.v7.widget.Toolbar>1
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
