@@ -1,12 +1,11 @@
 This App is an SMS sendting/recieving Sms App that basically performs all the functions that a Normal Sms App does other than deleting the messages.
 
 Libraries used are -
-1 . Only gson library other than all the other basic libraries is used .
+1 . Uses all the basic libraries of android .
 
 
 Depencies of the App =
- 1.compile 'com.google.code.gson:gson:2.6.2'
- 2.compile 'com.android.support:appcompat-v7:23.4.0'
- 3.compile 'com.android.support:design:23.4.0'
- 4.compile 'com.android.support:support-v4:23.4.0'
- 5.compile 'com.android.support:cardview-v7:23.4.0'
+ 1.compile 'com.android.support:appcompat-v7:23.4.0'
+ 2.compile 'com.android.support:design:23.4.0'
+ 3.compile 'com.android.support:support-v4:23.4.0'
+ 4.compile 'com.android.support:cardview-v7:23.4.0'
